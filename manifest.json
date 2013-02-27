@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "BeBanjo Search",
+  "description": "Easily search BeBanjo's Github related info. type 'b ' in the address bar and enjoy",
+  "version": "1.0",
+
+  "permissions": [
+    "storage",
+    "https://github.com/"
+  ],
+  
+  "omnibox": { "keyword" : "b" },
+  
+  "icons": {
+    "48": "bebanjo-48.png",
+    "16": "bebanjo-16.png"
+   },
+
+  "background" : {
+	"persistent": false,
+	"scripts": ["jquery-1.9.1.min.js", "search.js"]
+  }
+}
